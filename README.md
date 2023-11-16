@@ -5,7 +5,7 @@ Extracting div/script from pkl files
 ```
 import pickle
 
-with open('corscat_hofx_vs_gsihofx.pkl', "rb") as f:
+with open('sample.pkl', "rb") as f:
     dictionary = pickle.load(f)
 
 #dictionary['div'] is div component
