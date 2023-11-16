@@ -1,15 +1,13 @@
 # eva-gram-test
 
-Extracting div/script from html files using BeautifulSoup:
+Extracting div/script from pkl files
 
 ```
-from bs4 import BeautifulSoup
+import pickle
 
-html_file = 'test.html'
-with open(html_file, 'r') as f:
-    bokeh_html = f.read()
+with open('corscat_hofx_vs_gsihofx.pkl', "rb") as f:
+    dictionary = pickle.load(f)
 
-soup = BeautifulSoup(bokeh_html, 'html.parser')
-div = soup.find_all('div')[0]
-script = soup.find_all('script')[0]
+#dictionary['div'] is div component
+#dictionary['script'] is script component
 ```
